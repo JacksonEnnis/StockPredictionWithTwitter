@@ -41,7 +41,7 @@ def check_mentions(api, keywords, since_id):
         
         """
         elif "info" in tweet.text.lower():
-          customMessage = "@" + str(tweet.in_reply_to_screen_name) + "\n" + "Hello! My name is Jackson and I am studying CS at IU. I am currently looking for internship oppurtunities, so if you are interested in working with me please email me at jackennisres@gmail.com"
+          customMessage = "@" + str(tweet.in_reply_to_screen_name) + "\n" + "Hello! My name is Jackson and I am studying CS at IU. I am currently looking for internship opportunities, so if you are interested in working with me please email me at jackennisres@gmail.com"
           api.update_status(
           status=customMessage,
           in_reply_to_status_id=tweet.id,
